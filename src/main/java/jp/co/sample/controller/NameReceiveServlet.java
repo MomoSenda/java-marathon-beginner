@@ -8,7 +8,7 @@ import jp.co.sample.form.NameForm;
 
 /**
  * @author momosenda
- * 
+ * @param name リクエストパラメーター
  * @return 名前の表示画面
  *
  */
