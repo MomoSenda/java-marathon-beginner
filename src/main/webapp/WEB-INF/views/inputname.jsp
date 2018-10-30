@@ -6,7 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/toShow" method="POST"> 
+<form action="${pageContext.request.contextPath}/toOutputName" method="POST"> 
 	名前：
 	<input type="text" name="name">
 	<br>

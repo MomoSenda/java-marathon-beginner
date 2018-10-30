@@ -6,24 +6,35 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import jp.co.sample.form.NameForm;
 
+
 /**
- * @author momosenda
- * @param name リクエストパラメーター
- * @return 名前の表示画面
+ * フォームで入力した名前を表示するコントローラ.
+ * 
+ * @author momo.senda
  *
  */
 @Controller
 @RequestMapping("/")
-public class NameReceiveServlet {
+public class NameReceiveController {
+	
+	/**
+	 * 入力画面を表示する.
+	 * 
+	 * @return 入力画面
+	 */
 	@RequestMapping("/")
-	// 名前の情報を受け取る
 	public String index() {
 		return "inputname";
 	}
 
-	@RequestMapping("/toShow")
-
-	public String toShow(NameForm form, Model model) {
+	/**
+	 * 名前を受け取って出力画面を表示する.
+	 * @param form フォーム
+	 * @param model　モデル
+	 * @return　出力画面
+	 */
+	@RequestMapping("/toOutputName")
+	public String toOutputName(NameForm form, Model model) {
 		String name = form.getName();
 		// モデルスコープに格納
 		model.addAttribute("name", name);
