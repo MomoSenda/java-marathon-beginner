@@ -24,7 +24,7 @@ public class NameReceiveController {
 	 */
 	@RequestMapping("/")
 	public String index() {
-		return "inputname";
+		return "name/inputname";
 	}
 
 	/**
@@ -40,7 +40,7 @@ public class NameReceiveController {
 		model.addAttribute("name", name);
 
 		// フォワード
-		return "outputname";
+		return "name/outputname";
 	}
 
 }
