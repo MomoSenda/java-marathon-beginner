@@ -1,8 +1,17 @@
 package jp.co.sample.form;
 
+/**
+ * 商品価格用フォームクラス
+ * 
+ * @author momo.senda
+ *
+ */
 public class RegisterForm {
+/**商品1*/
 private Integer goods1;
+/**商品２*/
 private Integer goods2;
+/**商品3*/
 private Integer goods3;
 public Integer getGoods1() {
 	return goods1;

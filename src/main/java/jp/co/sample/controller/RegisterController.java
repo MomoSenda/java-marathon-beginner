@@ -11,12 +11,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import jp.co.sample.form.RegisterForm;
 
+/**
+ * フォームで入力した商品の値段を表示するコントローラ.
+ * @author momo.senda
+ *
+ */
 @Controller
 @RequestMapping("/register")
 public class RegisterController {
 	@Autowired
 	private ServletContext application;
 	
+	/**
+	 * 入力画面を表示する
+	 * @return 入力画面
+	 */
 	@RequestMapping("/")
 	public String index() {
 		
@@ -24,6 +33,13 @@ public class RegisterController {
 	
 	}
 	
+	
+	
+	/**
+	 * 商品の合計金額を計算して、税抜き・税込み価格を出力画面に表示する.
+	 * @param form　フォーム
+	 * @return　出力画面
+	 */
 	@RequestMapping("/price")
 	
 	public String Price(RegisterForm form) {
