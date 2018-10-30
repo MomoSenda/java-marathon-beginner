@@ -1,7 +1,8 @@
 package jp.co.sample.form;
 
 /**
- * ユーザー情報を受け取るフォーム
+ * ユーザー情報を表すドメイン.
+ * 
  * @author momo.senda
  *
  */

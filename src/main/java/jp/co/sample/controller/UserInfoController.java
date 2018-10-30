@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import jp.co.sample.form.User;
 
 /**
- * フォームで入力したユーザー情報を表示するコントローラ
+ * フォームで入力したユーザー情報を表示するコントローラ.
  * 
  * @author momo.senda
  *
@@ -16,7 +16,7 @@ import jp.co.sample.form.User;
 @RequestMapping("/userInfo")
 public class UserInfoController {
 	/**
-	 * 入力画面を表示する
+	 * 入力画面を表示する.
 	 * 
 	 * @return 入力画面
 	 */
@@ -26,7 +26,7 @@ public class UserInfoController {
 	}
 	
 	/**
-	 * ユーザー情報を受け取って出力画面に表示する
+	 * ユーザー情報を受け取って出力画面に表示する.
 	 * @param user フォール
 	 * @param model　モデル
 	 * @return　出力画面
