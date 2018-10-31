@@ -1,7 +1,7 @@
 package jp.co.sample.form;
 
 /**
- * 掛け算用フォームクラス
+ * 掛け算用フォームクラス.
  * 
  * @author momo.senda
  *

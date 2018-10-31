@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<c:out value="${calcForm.num1}" /> × <c:out value="${calcForm.num2}" /> = <c:out value="${answer}" />
+<c:out value="${num1}" /> × <c:out value="${num2}" /> = <c:out value="${answer}" />
 <br>
 <a href="/calc/value2">次へ</a>
 </body>
